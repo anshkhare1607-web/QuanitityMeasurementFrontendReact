@@ -1,0 +1,66 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  opacity: 90%;
+
+  .logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #111;
+    margin-bottom: 50px;
+    padding-left: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+
+    button {
+      background: transparent;
+      border: none;
+      padding: 14px 20px;
+      text-align: left;
+      font-size: 13px;
+      font-weight: 700;
+      color: #888;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+      letter-spacing: 1px;
+
+      &:hover {
+        background-color: #f5f5f5;
+        color: #6200ee;
+      }
+
+      &.active {
+        background-color: #fff;
+        color: #6200ee;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+
+  .bottom-nav {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+
+    button {
+      width: 100%;
+      background: transparent;
+      border: none;
+      padding: 12px 20px;
+      text-align: left;
+      color: #888;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 12px;
+      letter-spacing: 1px;
+
+      &:hover { color: #333; }
+    }
+  }
+}

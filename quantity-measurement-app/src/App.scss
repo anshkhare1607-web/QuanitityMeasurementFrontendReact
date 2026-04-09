@@ -1,0 +1,80 @@
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #fafafa;
+}
+
+.app-container {
+  background-image: url(https://wallpaperaccess.com/full/9434873.jpg);
+  background-size: cover;
+  border: none !important;
+  border-right: none !important;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fafafa;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  position: relative !important;
+  width: 260px;
+  min-width: 260px;
+  height: 100vh;
+  flex-shrink: 0;
+  background: white;
+  border-right: 1px solid #eee;
+}
+
+.content {
+  flex: 1;
+  height: 100vh;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+
+  .main-header {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+    
+    h1 {
+      font-size: 32px;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+    
+    p {
+      color: #180101;
+      font-size: 16px;
+    }
+  }
+
+  .tool-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+  }
+}
